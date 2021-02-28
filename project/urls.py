@@ -25,6 +25,7 @@ urlpatterns = [
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
     path('admin/', admin.site.urls),
     path('app/', include('app.urls')),
+    # check out the docs to see which paths this includes: https://docs.djangoproject.com/en/3.1/topics/auth/default/#using-the-views
     path('accounts/', include('django.contrib.auth.urls')),
     path('accounts/signup/', signup, name='signup'),
 ]
