@@ -7,6 +7,8 @@ in project/app/models.py
 It has basic template for sign up, log in, and view users
 in project/templates/
 
+Check out the TODOs in project/settings.py to set up a database other than mysql and set your secret key.
+
 initialized with `django-admin startproject project`
 then `python manage.py startapp app`
 

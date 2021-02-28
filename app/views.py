@@ -12,7 +12,6 @@ class UserListView(LoginRequiredMixin, ListView):
 
 def signup(request):
     if request.method == 'POST':
-        # this can't be used with custom user model
         form = SignUpForm(request.POST)
         if form.is_valid():
             form.save()

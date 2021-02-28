@@ -6,7 +6,6 @@ from app.views import (
     signup,
 )
 
-# TODO: for login and signup views, plaintext password is being passed in request
 urlpatterns = [
     path('users/', UserListView.as_view(template_name='app/users.html'), name='users'),
 ]
